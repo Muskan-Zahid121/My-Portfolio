@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* -----Navbar-----  */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    position: relative;
+}
+.navbar::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+.navbar ul li {
+    font-size: 1.2rem;
+}
+.navbar li a {
+    padding: 5px 20px;
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li a:hover{
+    border-bottom: 2px solid red;
+}
+
+/* -----Home-----  */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("img\ 1.jpg") no-repeat center center/cover;
+    height: 550px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+.heading {
+    color: white;
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    transform: scale(1,  1.3);
+}
+
+/* -----About-----  */
+
+#About {
+    color: #dfdddd;
+    height: 320px;
+}
+.container {
+    background: rgb(37, 36, 36);
+    width: 100%;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1 {
+    flex-basis: 35%;
+}
+.about-col-1 img {
+    height: 290px;
+    width: 80%;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.about-col-2 {
+    flex-basis: 55%;
+}
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+    padding-top: 50px;
+}
+.about-col-2 p {
+    line-height: 27px;
+}
+
+/* -----Skills-----  */
+
+#skill {
+    height: 300px;
+    background-color: rgb(37, 36, 36);
+    color: #fff;
+}
+.title-name {
+    padding: 40px 80px;
+    font-size: 30px;    
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.buttons button {
+    font-family: "Roboto" , sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    width: 200px;
+    background-color: rgb(172, 172, 200);
+    border-radius: 5px;
+    border: 5px solid transparent;
+}
+
+/* -----Projects-----  */
+
+#projects {
+    height: 500px;
+    background-color: rgb(37, 36, 36);
+}
+.title-proj {
+    padding: 40px 80px;
+    font-size: 25px;
+    color: #fff;
+}
+.images {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    color: #fff;
+}
+.img-1 {
+    height: 350px;
+    width: 300px;
+    background-color: rgb(74, 74, 74);
+    border-radius: 20px;
+}
+.img-1 img {
+    height: 250px;
+    width: 250px;
+    padding-left: 5px;
+    padding-top: 20px;
+    border-radius: 22px;
+}
+.img-2 {
+    height: 350px;
+    width: 300px;
+    background-color: rgb(74, 74, 74);
+    border-radius: 20px;
+}
+.img-2 img {
+    height: 250px;
+    width: 250px;
+    padding-left: 5px;
+    padding-top: 20px;
+    border-radius: 22px;
+}
+.img-3 {
+    height: 350px;
+    width: 300px;
+    background-color: rgb(74, 74, 74);
+    border-radius: 20px;
+}
+.img-3 img {
+    height: 250px;
+    width: 250px;
+    padding-left: 5px;
+    padding-top: 20px;
+    border-radius: 22px;
+}
+.img-4 {
+    height: 350px;
+    width: 300px;
+    background-color: rgb(74, 74, 74);
+    border-radius: 20px;
+}
+.img-4 img {
+    height: 250px;
+    width: 250px;
+    padding-left: 5px;
+    padding-top: 20px;
+    border-radius: 22px;
+}
+
+/* -----Resume-----  */
+
+#resume {
+    height: 250px;
+    background-color: rgb(37, 36, 36);
+}
+.my-res {
+    padding: 40px 80px;
+    font-size: 25px;
+    color: #fff;
+}
+.link {
+    text-align: center;
+    padding-top: 20px;
+}
+.my-res p {
+    color: rgb(240, 238, 238);
+    padding-bottom: 10px;
+}
+.my-res button {
+    height: 45px;
+    width: 250px;
+    background-color: rgb(118, 123, 121);
+    border-radius: 25px;
+    text-align: center;
+    border: 2px solid black;
+    font-size: large;
+    color:#fff
+}
+
+/* -----Contact-----  */
+
+#contact {
+    background-color: rgb(37, 36, 36);
+}
+.heading {
+    padding: 40px 80px;
+    font-size: 55px;
+    font-weight: bold;
+    color: #fff;
+    text-align: left;
+    font-family: "Roboto" , sans-serif;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.input {
+    padding: 15px 20px;
+    margin: 15px;
+    width: 37%;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+}
+#message {
+    margin: 15px;
+    padding: 10px;
+    border-radius: 20px;
+}
+#submit {
+    padding: 15px 20px;
+    margin: 30px;
+    width: 15%;
+    border-radius: 20px;
+    background-color: #000000dc;
+    color: white;
+    border: none;
+    outline:none;
+}
+#submit:hover {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+/* -----Get in touch-----  */
+
+.form h3 {
+    color: #fff;
+    font-size: larger;
+    font-weight: bold;
+}
+#get-touch {
+    background-color: rgb(37, 36, 36);
+    height: 380px;
+}
+.container {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.footer-content h3 {
+    padding: 40px 80px;
+    font-size: 55px;
+    font-weight: bold;
+    color: #fff;
+    padding-left: 10px;
+}
+.footer-content p {
+    color: rgb(221, 214, 214);
+    line-height: 40px;
+}
+.footer-content li a i {
+    text-decoration: none;
+}
+.bottom-bar {
+    text-align: center;
+    padding-top: 50px;
+    color: #fff;
+}
+/* -----------------------------------------
+----------------------------------------- */
